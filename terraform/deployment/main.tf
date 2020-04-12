@@ -12,7 +12,7 @@ module "vpc" {
 
 }
 
-# VPC Module
+# KOPS
 module "kops" {
 
   source      = "../modules/kops_resources"
@@ -22,18 +22,18 @@ module "kops" {
 }
 
 # Integrate Postgresql RDS
-# module "rds" {
+module "rds" {
 
-#   source              = "../modules/postgres_rds"
-#   vpc_id              = module.vpc.vpc_id
-#   rds_cidr            = var.rds_cidr
-#   rds_az              = var.rds_az
-#   rds_cidr_blocks     = var.rds_cidr_blocks
-#   db_pass             = var.db_pass
+  source              = "../modules/postgres_rds"
+  vpc_id              = module.vpc.vpc_id
+  rds_cidr            = var.rds_cidr
+  rds_az              = var.rds_az
+  rds_cidr_blocks     = var.rds_cidr_blocks
+  db_pass             = var.db_pass
 
-# }
+}
 
-# Create ECR Repo and push the app image
+ # Create ECR Repo and push the app image
 
 module "ecr" {
   source      = "../modules/ecr"
