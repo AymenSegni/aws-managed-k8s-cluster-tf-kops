@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aymen-krypton
+  labels:
+    app: aymen-krypton
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: aymen-krypton
+  template:
+    metadata:
+      labels:
+        app: aymen-krypton
+    spec:
+      containers:
+      - name: aymen-krypton
+        image: 898846401548.dkr.ecr.eu-central-1.amazonaws.com/aymen-krypton:latest
+        ports:
+        - containerPort: 80
