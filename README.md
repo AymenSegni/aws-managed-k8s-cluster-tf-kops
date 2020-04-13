@@ -70,7 +70,7 @@ Don't forget to store the AWS access key id and secret access key.  Next, you ne
 $ `aws configure` to add a new user.
 
 ````
-[terraform]
+[terraform_user]
 aws_access_key_id = xxxxxxxxxxxxxxxxxxx
 aws_secret_access_key = xxx/xxxxxxxxxxxxx/xxxx
 ````
