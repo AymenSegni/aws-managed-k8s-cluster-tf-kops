@@ -21,18 +21,6 @@ module "kops" {
   vpc_id      = module.vpc.vpc_id
 }
 
-# Integrate Postgresql RDS
-module "rds" {
-
-  source              = "../modules/postgres_rds"
-  vpc_id              = module.vpc.vpc_id
-  rds_cidr            = var.rds_cidr
-  rds_az              = var.rds_az
-  rds_cidr_blocks     = var.rds_cidr_blocks
-  db_pass             = var.db_pass
-
-}
-
  # Create ECR Repo and push the app image
 
 module "ecr" {
