@@ -101,7 +101,7 @@ So in AWS we need to choose a network plugin. Here we will use the [amazon-vpc-c
 To deploy an EKS cluster with Terraform and KOPS, the first step is to obtain the source code from the Github repository.
 This will clone the sample repository and make it the current directory
 
-`$ git clone https://github.com/AymenSegni/aws-eks-tf-kops.git`
+`$ git clone https://github.com/AymenSegni/aws-eks-cluster-tf-kops.git`
 `$ cd aws-eks-tf-kops`
 
 Our project directory tree will look like at the end:
