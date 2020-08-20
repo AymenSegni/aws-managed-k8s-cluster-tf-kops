@@ -1,8 +1,8 @@
-# Setup AWS EKS Kubernetes Cluster using Terraform and KOPS and deploy a sample K8S Application
+# Setup AWS Managed Kubernetes Cluster using Terraform and KOPS and deploy a sample K8S Application
 
 ## Introduction
 
-This readme describes how to deploy a reliable and high available  AWS EKS cluster with [`Terraform`](https://www.terraform.io/) and [`KOPS`](https://github.com/kubernetes/kops).
+This readme describes how to deploy a reliable and high available  AWS Mnagaed cluster with [`Terraform`](https://www.terraform.io/) and [`KOPS`](https://github.com/kubernetes/kops).
 
 Amazon Elastic Kubernetes Service (Amazon EKS) is a fully managed [Kubernetes](https://aws.amazon.com/kubernetes/) service.
 Kubernetes (K8S) is an open-source system for automating deployment, scaling, and management of containerized applications.
